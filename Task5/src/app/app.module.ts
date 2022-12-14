@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
 import {MatTabsModule} from '@angular/material/tabs';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { TabGroupAlignExampleComponent } from './tab-group-align-example/tab-group-align-example.component';
 
 @NgModule({
@@ -16,7 +17,8 @@ import { TabGroupAlignExampleComponent } from './tab-group-align-example/tab-gro
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatTabsModule
+    MatTabsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
