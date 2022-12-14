@@ -15,7 +15,8 @@ import { TabGroupAlignExampleComponent } from './tab-group-align-example/tab-gro
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
