@@ -9,10 +9,14 @@ import { BookComponent } from './book/book.component';
   declarations: [
     AppComponent,
     BookComponent
+   
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgxChartsModule,
+    AlertModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
