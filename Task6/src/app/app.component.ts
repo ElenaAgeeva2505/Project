@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
 @Component({
-  selector: 'my-app',
+  selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
