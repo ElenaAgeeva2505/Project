@@ -3,16 +3,26 @@ import {
   HttpRequest,
   HttpHandler,
   HttpEvent,
-  HttpInterceptor
+  HttpInterceptor,
+  HttpHeaders,
+  HttpEventType,
+  HttpErrorResponse,
+  HttpParams,
+  HttpResponse,
 } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { map, Observable, tap } from 'rxjs';
 
 @Injectable()
-export class LoggsInterceptor implements HttpInterceptor {
-
+export class LoggingInterceptor implements HttpInterceptor {
   constructor() {}
 
-  intercept(request: HttpRequest<unknown>, next: HttpHandler): Observable<HttpEvent<unknown>> {
-    return next.handle(request);
+  intercept(
+    request: HttpRequest<any>,
+    next: HttpHandler
+  ): Observable<HttpEvent<any>> {
+    console.log(request);
+    request = request.clone({ params: new HttpParams().set('id',1)
+    });
+   return next.handle(request);
   }
 }
