@@ -1,0 +1,48 @@
+p {
+    font-family: Lato;
+  }
+  
+  
+  
+  
+  a.buttons {
+    min-width: 100px;
+    font-family: inherit;
+    appearance: none;
+    border: 0;
+    border-radius: 5px;
+    background: #4676d7;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: inline-block;
+  }
+  a.buttons:hover {
+    background: #1d49aa;
+  }
+  a.buttons:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px #cbd6ee;
+  }
+  
+  
+  b.buttons-close {
+    min-width: 100px;
+    font-family: inherit;
+    appearance: none;
+    border: 0;
+    border-radius: 5px;
+    background: rgb(107, 102, 102);
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  b.buttons-close:hover {
+    background: #d82e58;
+  }
+  b.buttons-close:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px #cbd6ee;
+  }
